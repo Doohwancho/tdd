@@ -23,6 +23,10 @@ A-1. clone code crash course * n -> generalize\
 A-2. indexing in a single file\
 A-3. etc(lombok, jpa, etc...)
 
+
+C-1. create entity, dto, repository, service to play with
+
+
 ---
 standard
 
