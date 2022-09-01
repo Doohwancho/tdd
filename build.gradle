@@ -34,4 +34,6 @@ dependencies {
 
 test {
 	useJUnitPlatform()
+
+	environment "MY_ENV_VAR", "true"
 }
