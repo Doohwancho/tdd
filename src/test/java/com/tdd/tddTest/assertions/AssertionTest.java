@@ -34,6 +34,5 @@ public class AssertionTest {
 
         assertTimeout(Duration.ofMillis(100), () -> Thread.sleep(10)); //타임아웃 준수
 //        assertTimeout(Duration.ofMillis(10), () -> Thread.sleep(100)); //타임아웃 초과
-
     }
 }
