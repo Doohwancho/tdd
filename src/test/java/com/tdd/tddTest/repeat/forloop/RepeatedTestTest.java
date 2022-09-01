@@ -1,4 +1,4 @@
-package com.tdd.tddTest.forloop;
+package com.tdd.tddTest.repeat.forloop;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.RepeatedTest;
