@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -17,7 +19,7 @@ public class PostsRepositoryTest {
     PostsRepository postsRepository;
 
     @Test
-    @DisplayName("repository 의존성 주입 테스트")
+    @DisplayName("repository 의존성 주입")
     public void postsRepository_의존성_주입_테스트(){
         assertThat(postsRepository.getClass().getName()).isNotNull();
     }
@@ -49,4 +51,28 @@ public class PostsRepositoryTest {
         );
     }
 
+
+
+    @Test
+    @DisplayName("게시글 저장")
+    public void 게시글_저장(){
+        //given
+        String title = "hello";
+        String content = "hello world";
+        String author = "cho";
+
+        Posts post = new Posts()
+                .builder()
+                .title(title)
+                .content(content)
+                .author(author)
+                .build();
+
+        //when
+        Posts result = postsRepository.save(post);
+
+
+        //then
+        assertEquals(result.getTitle(), title);
+    }
 }
