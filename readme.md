@@ -26,7 +26,6 @@ A-3. etc(lombok, jpa, etc...)
 
 B-1. why TDD?
 B-2. BDD
-B-3. junit5 test시 주의사항
 
 C-1. create entity, dto, repository, service to play with
 
