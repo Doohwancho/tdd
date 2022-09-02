@@ -173,4 +173,29 @@ public class PostsRepositoryTest {
                 () -> assertEquals(updatedPost.getTitle(), "updated_title")
         );
     }
+
+    @Test
+    @DisplayName("게시글 삭제")
+    public void 게시글_삭제_테스트(){
+        //given
+        String title = "hello";
+        String content = "hello world";
+        String author = "cho";
+
+        Posts post = new Posts()
+                .builder()
+                .title(title)
+                .content(content)
+                .author(author)
+                .build();
+
+        Posts result = postsRepository.save(post);
+        long id = result.getId();
+
+        //when
+        postsRepository.deleteById(id);
+
+        //then
+        assertThat(postsRepository.findById(id)).isEmpty();
+    }
 }

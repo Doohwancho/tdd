@@ -12,7 +12,7 @@ A. get-used-to junit5 fundamental syntax\
 B. TDD brief overview\
 C. JPA test boilerplate\
 D. REST API test boilerplate\
-E. try 3rd party testing framework\
+E. try 3rd party testing framework
 
 
 
@@ -24,11 +24,11 @@ A-2. indexing\
 A-3. etc(lombok, jpa, etc...)
 
 
-B-1. why TDD?
+B-1. why TDD?\
 B-2. BDD
 
-C-1. create entity, dto, repository, service to play with
-C-2. clone jpa test
+C-1. create entity, dto, repository, service to play with\
+C-2. clone jpa test\
 C-3. indexing
 
 ---\
