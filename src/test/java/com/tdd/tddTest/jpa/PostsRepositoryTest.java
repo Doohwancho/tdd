@@ -81,7 +81,7 @@ public class PostsRepositoryTest {
     @DisplayName("게시글 제목으로 조회")
     public void 게시글_제목으로_조회(){
         //given
-        String title = "hello2";
+        String title = "unique-title";
         String content = "hello world2";
         String author = "cho2";
 
