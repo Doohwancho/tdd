@@ -75,4 +75,28 @@ public class PostsRepositoryTest {
         //then
         assertEquals(result.getTitle(), title);
     }
+
+    @Test
+    @DisplayName("게시글 제목으로 조회")
+    public void 게시글_제목으로_조회(){
+        //given
+        String title = "hello2";
+        String content = "hello world2";
+        String author = "cho2";
+
+        Posts post = new Posts()
+                .builder()
+                .title(title)
+                .content(content)
+                .author(author)
+                .build();
+
+        postsRepository.save(post);
+
+        //when
+        Posts result = postsRepository.findByTitle(title);
+
+        //then
+        assertEquals(post.getTitle(), result.getTitle());
+    }
 }
