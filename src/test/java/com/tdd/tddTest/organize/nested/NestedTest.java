@@ -1,4 +1,4 @@
-package com.tdd.tddTest.nested;
+package com.tdd.tddTest.organize.nested;
 
 import com.tdd.tddTest.domain.Posts;
 import org.junit.jupiter.api.*;

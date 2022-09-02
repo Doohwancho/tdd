@@ -1,15 +1,11 @@
-package com.tdd.tddTest.condition;
+package com.tdd.tddTest.ifelse;
 
-import lombok.val;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.*;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.condition.OS.MAC;
-import static org.junit.jupiter.api.condition.OS.WINDOWS;
-
-import org.junit.jupiter.api.condition.EnabledIf;
 
 public class ConditionTest {
 

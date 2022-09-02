@@ -1,6 +1,5 @@
-package com.tdd.tddTest.assertions;
+package com.tdd.tddTest.fundamental.assertions;
 import com.tdd.tddTest.domain.Posts;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.time.Duration;

@@ -1,4 +1,4 @@
-package com.tdd.tddTest.tags;
+package com.tdd.tddTest.organize.tags;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

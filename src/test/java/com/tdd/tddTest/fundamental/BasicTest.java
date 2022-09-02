@@ -1,4 +1,4 @@
-package com.tdd.tddTest.basic;
+package com.tdd.tddTest.fundamental;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test; //junit5는 jupiter api 사용
