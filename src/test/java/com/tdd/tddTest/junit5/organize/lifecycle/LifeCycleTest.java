@@ -1,4 +1,4 @@
-package com.tdd.tddTest.organize.lifecycle;
+package com.tdd.tddTest.junit5.organize.lifecycle;
 
 import org.junit.jupiter.api.*;
 

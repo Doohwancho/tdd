@@ -1,4 +1,4 @@
-package com.tdd.tddTest.ifelse;
+package com.tdd.tddTest.junit5.ifelse;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

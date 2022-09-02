@@ -1,4 +1,4 @@
-package com.tdd.tddTest.ifelse.assumption;
+package com.tdd.tddTest.junit5.ifelse.assumption;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

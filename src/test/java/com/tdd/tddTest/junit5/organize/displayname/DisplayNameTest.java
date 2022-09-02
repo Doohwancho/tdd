@@ -1,4 +1,4 @@
-package com.tdd.tddTest.organize.displayname;
+package com.tdd.tddTest.junit5.organize.displayname;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

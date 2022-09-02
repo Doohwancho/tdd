@@ -1,4 +1,4 @@
-package com.tdd.tddTest.fundamental.assertions;
+package com.tdd.tddTest.junit5.fundamental.assertions;
 import com.tdd.tddTest.domain.Posts;
 import org.junit.jupiter.api.Test;
 

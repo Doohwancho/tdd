@@ -1,4 +1,4 @@
-package com.tdd.tddTest.repeat.parameterized;
+package com.tdd.tddTest.junit5.repeat.parameterized;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
