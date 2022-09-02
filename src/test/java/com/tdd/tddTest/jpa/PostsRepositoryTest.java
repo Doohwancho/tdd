@@ -99,4 +99,45 @@ public class PostsRepositoryTest {
         //then
         assertEquals(post.getTitle(), result.getTitle());
     }
+
+
+    @Test
+    @DisplayName("전체 게시글 조회 DESC by ID")
+    public void 전체_게시글_조회_DESC_BY_ID(){
+        //given
+        String title1 = "hello1";
+        String content1 = "hello world1";
+        String author1 = "cho1";
+
+        Posts post1 = new Posts()
+                .builder()
+                .title(title1)
+                .content(content1)
+                .author(author1)
+                .build();
+
+        String title2 = "hello2";
+        String content2 = "hello world2";
+        String author2 = "cho2";
+
+        Posts post2 = new Posts()
+                .builder()
+                .title(title2)
+                .content(content2)
+                .author(author2)
+                .build();
+
+        postsRepository.save(post1);
+        postsRepository.save(post2);
+
+        //when
+        List<Posts> result = postsRepository.findAllDesc();
+
+        //then
+        assertAll(
+                () -> assertNotNull(result.get(0)),
+                () -> assertNotNull(result.get(1)),
+                () -> assertThat(result.get(0).getId() > result.get(1).getId())
+        );
+    }
 }
