@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
@@ -138,6 +139,38 @@ public class PostsRepositoryTest {
                 () -> assertNotNull(result.get(0)),
                 () -> assertNotNull(result.get(1)),
                 () -> assertThat(result.get(0).getId() > result.get(1).getId())
+        );
+    }
+
+    @Test
+    @DisplayName("게시글 업데이트 테스트")
+    public void 게시글_업데이트_테스트(){
+        //given
+        String title = "prev_title";
+        String content = "prev_content";
+        String author = "author";
+
+        Posts post = new Posts()
+                .builder()
+                .title(title)
+                .content(content)
+                .author(author)
+                .build();
+
+        postsRepository.save(post);
+        Posts prevPost = postsRepository.findByTitle(title);
+
+
+        //when
+        prevPost.update("updated_title","updated_content"); // db 저장시 id 가 같으면 수정처리함
+        Posts updatedPost = postsRepository.save(prevPost);
+
+
+        //then
+        assertAll(
+                () -> assertThat(updatedPost.getClass().getName()).isNotNull(),
+                () -> assertEquals(updatedPost.getAuthor(), prevPost.getAuthor()),
+                () -> assertEquals(updatedPost.getTitle(), "updated_title")
         );
     }
 }
