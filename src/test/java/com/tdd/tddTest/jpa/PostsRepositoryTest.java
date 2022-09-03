@@ -3,9 +3,13 @@ package com.tdd.tddTest.jpa;
 import com.tdd.tddTest.domain.Posts;
 import com.tdd.tddTest.domain.PostsRepository;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 import java.util.Optional;
@@ -197,5 +201,33 @@ public class PostsRepositoryTest {
 
         //then
         assertThat(postsRepository.findById(id)).isEmpty();
+    }
+
+
+    @Test
+    public void paging_테스트(){
+        //given
+        for(int i = 0; i < 30; i++){
+            Posts post = new Posts()
+                    .builder()
+                    .title("title "+i)
+                    .content("content "+i)
+                    .author("author: "+i)
+                    .build();
+            postsRepository.save(post);
+        }
+
+        Pageable pageable = PageRequest.of(1, 10);
+
+
+        //when
+        Page<Posts> results = postsRepository.findAll(pageable);
+
+        //then
+        assertAll(
+            () -> assertTrue(results.getNumber() == 1),
+            () -> assertTrue(results.getSize() == 10),
+            () -> assertThat(results.getContent().get(0)).isNotNull()
+        );
     }
 }
