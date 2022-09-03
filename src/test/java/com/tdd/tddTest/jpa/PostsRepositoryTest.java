@@ -11,6 +11,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -82,6 +83,7 @@ public class PostsRepositoryTest {
 
     @Test
     @DisplayName("게시글 제목으로 조회")
+    @Transactional
     public void 게시글_제목으로_조회(){
         //given
         String title = "unique-title";
@@ -107,6 +109,7 @@ public class PostsRepositoryTest {
 
     @Test
     @DisplayName("전체 게시글 조회 DESC by ID")
+    @Transactional
     public void 전체_게시글_조회_DESC_BY_ID(){
         //given
         String title1 = "hello1";
@@ -147,6 +150,7 @@ public class PostsRepositoryTest {
 
     @Test
     @DisplayName("게시글 업데이트 테스트")
+    @Transactional
     public void 게시글_업데이트_테스트(){
         //given
         String title = "prev_title";
@@ -179,6 +183,7 @@ public class PostsRepositoryTest {
 
     @Test
     @DisplayName("게시글 삭제")
+    @Transactional
     public void 게시글_삭제_테스트(){
         //given
         String title = "hello";
@@ -205,6 +210,7 @@ public class PostsRepositoryTest {
 
     @Test
     @DisplayName("pagination 테스트")
+    @Transactional
     public void paging_테스트(){
         //given
         for(int i = 0; i < 30; i++){
@@ -234,6 +240,7 @@ public class PostsRepositoryTest {
 
     @Test
     @DisplayName("sort by desc while pagination 테스트")
+    @Transactional
     public void sort_desc_while_pagination_테스트(){
         //given
         for(int i = 0; i < 20; i++){
