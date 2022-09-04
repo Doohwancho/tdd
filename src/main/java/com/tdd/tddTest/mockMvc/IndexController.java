@@ -1,4 +1,4 @@
-package com.tdd.tddTest.controller;
+package com.tdd.tddTest.mockMvc;
 
 import com.tdd.tddTest.dto.PostsResponseDto;
 import com.tdd.tddTest.service.PostsService;
