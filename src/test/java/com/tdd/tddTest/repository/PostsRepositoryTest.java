@@ -1,7 +1,7 @@
-package com.tdd.tddTest.jpa;
+package com.tdd.tddTest.repository;
 
-import com.tdd.tddTest.domain.Posts;
-import com.tdd.tddTest.domain.PostsRepository;
+import com.tdd.tddTest.domain.posts.Posts;
+import com.tdd.tddTest.domain.posts.PostsRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,12 +47,12 @@ public class PostsRepositoryTest {
 
         //then
         assertAll(
-            () -> assertThat(post.getTitle()).isNotNull(),
-            () -> assertThat(post.getTitle()).isEqualTo(title),
-            () -> assertThat(post.getContent()).isNotNull(),
-            () -> assertThat(post.getContent()).isEqualTo(content),
-            () -> assertThat(post.getAuthor()).isNotNull(),
-            () -> assertThat(post.getAuthor()).isEqualTo(author)
+                () -> assertThat(post.getTitle()).isNotNull(),
+                () -> assertThat(post.getTitle()).isEqualTo(title),
+                () -> assertThat(post.getContent()).isNotNull(),
+                () -> assertThat(post.getContent()).isEqualTo(content),
+                () -> assertThat(post.getAuthor()).isNotNull(),
+                () -> assertThat(post.getAuthor()).isEqualTo(author)
         );
     }
 
@@ -231,9 +231,9 @@ public class PostsRepositoryTest {
 
         //then
         assertAll(
-            () -> assertTrue(results.getNumber() == 1),
-            () -> assertTrue(results.getSize() == 10),
-            () -> assertThat(results.getContent().get(0)).isNotNull()
+                () -> assertTrue(results.getNumber() == 1),
+                () -> assertTrue(results.getSize() == 10),
+                () -> assertThat(results.getContent().get(0)).isNotNull()
         );
     }
 

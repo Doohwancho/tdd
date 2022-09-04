@@ -1,7 +1,7 @@
 package com.tdd.tddTest.service;
 
-import com.tdd.tddTest.domain.Posts;
-import com.tdd.tddTest.domain.PostsRepository;
+import com.tdd.tddTest.domain.posts.Posts;
+import com.tdd.tddTest.domain.posts.PostsRepository;
 import com.tdd.tddTest.dto.PostsListResponseDto;
 import com.tdd.tddTest.dto.PostsResponseDto;
 import com.tdd.tddTest.dto.PostsSaveRequestDto;

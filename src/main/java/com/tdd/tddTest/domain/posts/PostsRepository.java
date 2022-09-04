@@ -1,5 +1,6 @@
-package com.tdd.tddTest.domain;
+package com.tdd.tddTest.domain.posts;
 
+import com.tdd.tddTest.domain.posts.Posts;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

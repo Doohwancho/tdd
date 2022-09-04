@@ -1,6 +1,6 @@
 package com.tdd.tddTest.junit5.organize.nested;
 
-import com.tdd.tddTest.domain.Posts;
+import com.tdd.tddTest.domain.posts.Posts;
 import org.junit.jupiter.api.*;
 
 @DisplayName("Nested: given parent")

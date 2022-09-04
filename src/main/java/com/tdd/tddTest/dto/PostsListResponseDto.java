@@ -1,6 +1,6 @@
 package com.tdd.tddTest.dto;
 
-import com.tdd.tddTest.domain.Posts;
+import com.tdd.tddTest.domain.posts.Posts;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
