@@ -53,11 +53,16 @@ A-1. [JUnit 5: Front To Back (FULL COURSE)](https://www.youtube.com/watch?v=-RW_
 A-1. [Junit 5 documentation](https://junit.org/junit5/docs/current/user-guide/)  
 A-4. [테스트하기 좋은 코드 - 테스트하기 어려운 코드](https://jojoldu.tistory.com/674)
  
+B-1. what is TDD\
+B-2. what is BDD\
+B-3. [what is Mock](https://happy-coding-day.tistory.com/entry/Mock-%EA%B0%9D%EC%B2%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C-%EC%99%9C-%EC%8D%A8%EC%95%BC%EB%90%A0%EA%B9%8C)
+
 C-1. [SpringBoot로 웹서비스 개발하기 by jojoldu](https://github.com/jojoldu/springboot-webservice) \
 C-2. [Springboot - junit을 이용한 DB관련 테스트 작성하는 방법, embedded mongo를 이용한 테스트](https://coding-start.tistory.com/323?category=738631)
 
 D-1. [MockMvc 테스트를 위한 base setup](https://github.com/jojoldu/springboot-webservice) \
-D-2. MockMvc 예제 코드 clone
+D-2. MockMvc 예제 코드 clone\
+D-3. [Mockito - java unit test library](https://site.mockito.org/)
 
 E-1. [rest assured library](https://github.com/rest-assured/rest-assured) \
 E-1. [MockMvc Test Setup With REST Assured and Spring Boot](https://www.youtube.com/watch?v=1rkoFTxJhNk&ab_channel=rieckpil)
