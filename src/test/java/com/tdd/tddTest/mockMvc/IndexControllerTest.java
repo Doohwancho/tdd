@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.context.WebApplicationContext;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -25,21 +26,29 @@ public class IndexControllerTest {
     private PostsApiController apiController;
 
     @Autowired
-    private MockMvc indexMockMvc;
+    private WebApplicationContext context;
+
+//    @Autowired
+//    private MockMvc indexMockMvc;
+//
+//    @Autowired
+//    private MockMvc apiMockMvc;
 
     @Autowired
-    private MockMvc apiMockMvc;
+    private MockMvc mockMvc;
 
     @BeforeEach
     public void init(){
-        indexMockMvc = MockMvcBuilders.standaloneSetup(indexController).build();
-        apiMockMvc = MockMvcBuilders.standaloneSetup(apiController).build();
+//        indexMockMvc = MockMvcBuilders.standaloneSetup(indexController).build(); //해당 controller만 테스트 할 때 .standaloneSteup() 사용. 개별 컨트롤러 테스트에 적합
+//        apiMockMvc = MockMvcBuilders.standaloneSetup(apiController).build();
+
+        mockMvc = MockMvcBuilders.webAppContextSetup(context).build(); //전체 controller bean 가져와서 쓸 때, webAppContextSetup() 사용. 통합 테스트(integration test)에 적합
     }
 
     @Test
     @DisplayName("IndexController에 / request 테스트")
     public void httpGetTest() throws Exception{
-        indexMockMvc.perform(get("/"))
+        mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
                 .andDo(print());
     }
@@ -48,7 +57,7 @@ public class IndexControllerTest {
     @DisplayName("PostsApiController에 POST 작동 테스트")
     public void httpPostTest() throws Exception{
 
-        apiMockMvc.perform(post("/api/v1/posts")
+        mockMvc.perform(post("/api/v1/posts")
                         .content("{\"title\":\"post-test-title\", \"content\":\"post--test-content\", \"author\":\"post-test-author\"}")
                         .contentType(MediaType.APPLICATION_JSON)
                 )

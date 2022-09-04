@@ -36,6 +36,10 @@ C-3. indexing
 D-1. create base code for MockAPI\
 D-2. clone best practice test code 
 
+E-1. rest assured install\
+E-2. rest assured basics\
+E-3. rest assured 다른사람이 적용한 것 참고(?)
+
 ---\
 standard
 
@@ -65,11 +69,11 @@ D-2. MockMvc 예제 코드 clone\
 D-3. [Mockito - java unit test library](https://site.mockito.org/)
 
 E-1. [rest assured library](https://github.com/rest-assured/rest-assured) \
-E-1. [MockMvc Test Setup With REST Assured and Spring Boot](https://www.youtube.com/watch?v=1rkoFTxJhNk&ab_channel=rieckpil)
+E-1. [MockMvc Test Setup With REST Assured and Spring Boot](https://www.youtube.com/watch?v=1rkoFTxJhNk&ab_channel=rieckpil) \
 E-1. [Test-Driven Development for Spring Boot APIs](https://stackabuse.com/test-driven-development-for-spring-boot-apis/) \
 E-1. [REST Assured를 사용한 REST API 테스트](https://beenlife.tistory.com/34) \
-E-2. [Let's Test: Java TDD API development with Spring Boot REST API and REST Assured](https://www.youtube.com/watch?v=_ITXlWsH2oc&ab_channel=DevXplaining)
-
+E-2. [Let's Test: Java TDD API development with Spring Boot REST API and REST Assured](https://www.youtube.com/watch?v=_ITXlWsH2oc&ab_channel=DevXplaining) \
+E-3. [next-step/spring-learning-test solved by 손너잘](https://github.dev/bperhaps/spring-learning-test/tree/mvc-minsung)
 
 F. [spring-guide.git](https://github.com/cheese10yun/spring-guide/blob/master/docs/test-guide.md) \
 F. [JUnit 5 Test - MockMvc, Mockito, JPA 미완성](https://theheydaze.tistory.com/218?category=935990)
