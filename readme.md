@@ -11,10 +11,11 @@ approach
 A. get-used-to junit5 fundamental syntax\
 B. TDD brief overview\
 C. JPA test\
-D. Mock\
-E. REST-Assured API test library\
-F. swagger api test && documentation library\
-G. steal(?) from best practices | boiler plates
+D. MockMvc\
+E. 3rd party library: REST-Assured\
+F. 3rd party library: Mockito\
+G. 3rd party library: swagger\
+H. steal(?) from best practices | boiler plates
 
 
 
@@ -66,7 +67,7 @@ C-2. [Springboot - junit을 이용한 DB관련 테스트 작성하는 방법, em
 
 D-1. [MockMvc 테스트를 위한 base setup](https://github.com/jojoldu/springboot-webservice) \
 D-2. MockMvc 예제 코드 clone\
-D-3. [Mockito - java unit test library](https://site.mockito.org/)
+
 
 E-1. [rest assured library](https://github.com/rest-assured/rest-assured) \
 E-1. [MockMvc Test Setup With REST Assured and Spring Boot](https://www.youtube.com/watch?v=1rkoFTxJhNk&ab_channel=rieckpil) \
@@ -75,5 +76,7 @@ E-1. [REST Assured를 사용한 REST API 테스트](https://beenlife.tistory.com
 E-2. [Let's Test: Java TDD API development with Spring Boot REST API and REST Assured](https://www.youtube.com/watch?v=_ITXlWsH2oc&ab_channel=DevXplaining) \
 E-3. [next-step/spring-learning-test solved by 손너잘](https://github.dev/bperhaps/spring-learning-test/tree/mvc-minsung)
 
-F. [spring-guide.git](https://github.com/cheese10yun/spring-guide/blob/master/docs/test-guide.md) \
-F. [JUnit 5 Test - MockMvc, Mockito, JPA 미완성](https://theheydaze.tistory.com/218?category=935990)
+F-1. [Mockito를 이용한 unit test](https://www.crocus.co.kr/1556?category=395790)
+
+H. [spring-guide.git](https://github.com/cheese10yun/spring-guide/blob/master/docs/test-guide.md) \
+H. [JUnit 5 Test - MockMvc, Mockito, JPA 미완성](https://theheydaze.tistory.com/218?category=935990)
