@@ -41,6 +41,9 @@ E-1. rest assured install\
 E-2. rest assured basics\
 E-3. rest assured 다른사람이 적용한 것 참고(?)
 
+F-1. mockito getting-started
+F-2. mockito best practices
+
 ---\
 standard
 
@@ -79,7 +82,8 @@ E-3. [rest-api-example](https://github.dev/sunghs/rest-api-example) \
 E-3. [rest api 개발하기1 - 프로젝트 생성 및 swwagger2 연동](https://sunghs.tistory.com/117) \
 E-3. [새로비 springboot rest api](https://engkimbs.tistory.com/category/Spring/Spring%20Rest%20API)
 
-F-1. [Mockito를 이용한 unit test](https://www.crocus.co.kr/1556?category=395790)
+F-1. [Mockito를 이용한 unit test](https://www.crocus.co.kr/1556?category=395790) \
+F-2. [mockito-best-practice](https://codechacha.com/ko/mockito-best-practice/)
 
 H. [spring-guide.git](https://github.com/cheese10yun/spring-guide/blob/master/docs/test-guide.md) \
 H. [JUnit 5 Test - MockMvc, Mockito, JPA 미완성](https://theheydaze.tistory.com/218?category=935990) \
