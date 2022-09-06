@@ -74,9 +74,13 @@ E-1. [MockMvc Test Setup With REST Assured and Spring Boot](https://www.youtube.
 E-1. [Test-Driven Development for Spring Boot APIs](https://stackabuse.com/test-driven-development-for-spring-boot-apis/) \
 E-1. [REST Assured를 사용한 REST API 테스트](https://beenlife.tistory.com/34) \
 E-2. [Let's Test: Java TDD API development with Spring Boot REST API and REST Assured](https://www.youtube.com/watch?v=_ITXlWsH2oc&ab_channel=DevXplaining) \
-E-3. [next-step/spring-learning-test solved by 손너잘](https://github.dev/bperhaps/spring-learning-test/tree/mvc-minsung)
+E-3. [next-step/spring-learning-test solved by 손너잘](https://github.dev/bperhaps/spring-learning-test/tree/mvc-minsung) \
+E-3. [rest-api-example](https://github.dev/sunghs/rest-api-example) \
+E-3. [rest api 개발하기1 - 프로젝트 생성 및 swwagger2 연동](https://sunghs.tistory.com/117) \
+E-3. [새로비 springboot rest api](https://engkimbs.tistory.com/category/Spring/Spring%20Rest%20API)
 
 F-1. [Mockito를 이용한 unit test](https://www.crocus.co.kr/1556?category=395790)
 
 H. [spring-guide.git](https://github.com/cheese10yun/spring-guide/blob/master/docs/test-guide.md) \
-H. [JUnit 5 Test - MockMvc, Mockito, JPA 미완성](https://theheydaze.tistory.com/218?category=935990)
+H. [JUnit 5 Test - MockMvc, Mockito, JPA 미완성](https://theheydaze.tistory.com/218?category=935990) \
+H. [스프링 부트 강의 - 어라운드 허브](https://www.youtube.com/watch?v=rHJgMRimJ4Y&list=PLlTylS8uB2fBOi6uzvMpojFrNe7sRmlzU&index=1&ab_channel=%EC%96%B4%EB%9D%BC%EC%9A%B4%EB%93%9C%ED%97%88%EB%B8%8C%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4-AroundHubStudio)
