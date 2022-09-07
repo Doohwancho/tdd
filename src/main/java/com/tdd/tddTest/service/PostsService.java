@@ -2,10 +2,10 @@ package com.tdd.tddTest.service;
 
 import com.tdd.tddTest.domain.posts.Posts;
 import com.tdd.tddTest.domain.posts.PostsRepository;
-import com.tdd.tddTest.dto.PostsListResponseDto;
-import com.tdd.tddTest.dto.PostsResponseDto;
-import com.tdd.tddTest.dto.PostsSaveRequestDto;
-import com.tdd.tddTest.dto.PostsUpdateRequestDto;
+import com.tdd.tddTest.dto.posts.PostsListResponseDto;
+import com.tdd.tddTest.dto.posts.PostsResponseDto;
+import com.tdd.tddTest.dto.posts.PostsSaveRequestDto;
+import com.tdd.tddTest.dto.posts.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
